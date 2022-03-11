@@ -58,6 +58,7 @@ a.navbar-item:hover,
 }
 .subtitle {
     letter-spacing: 0.25rem;
+    color: #FFFFFF !important;
 }
 
 #about {
@@ -369,6 +370,6 @@ body{
     border-radius: 50%;
 }
 
-#description, .title, #this-is-the-h1-text, #this-is-the-h2-text, #this-is-the-h3-text, #this-is-the-h4-text, #this-is-the-h5-text, #this-is-the-h6-text, strong{
-    color:white;
+#description, .title, h1, h2, h3, h4, h5, h6, strong{
+    color:white !important; 
   }
