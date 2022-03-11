@@ -23,8 +23,6 @@ a.navbar-item:hover,
     color: #ffab40 !important;
 }
 
-
-
 .navbar-link:not(.is-arrowless)::after {
     border-color: grey;
 }
@@ -222,7 +220,7 @@ a.navbar-item:hover,
                 color: #7a7a7a;
 
                 &:hover {
-                    color: white;
+                    color: #ffab40;
                 }
             }
 
