@@ -1,7 +1,7 @@
 ---
 title: Welcome to SWIFT!
 layout: post
-post-image: "/assets/images/swift_post.png"
+post-image: "/WhatATheme/assets/images/swift_post.png"
 description: Students With an Interest in the Future of Technology is a student-run organization at California Polytechnicic University, Pomona.
 tags:
 - post
