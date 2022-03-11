@@ -16,6 +16,7 @@ site-image: /WhatATheme/assets/images/bg.jpg
 site-keywords: Site, Template, Theme
 # URL for the Image of custom Favicon
 favicon-url: https://cdn.discordapp.com/attachments/944043541645107220/951651747082948620/swifti.png
+swiftimage : /WhatATheme/assets/images/swift.png
 
 # URL of the Image of Custom Hero Image (i.e., the image in the background of the very first section of the Homepage)
 heroimage: https://cdn.discordapp.com/attachments/944043541645107220/951651377833181265/bg.jpg
