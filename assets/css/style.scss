@@ -229,7 +229,7 @@ a.navbar-item.is-active {
                 color: #7a7a7a;
 
                 &:hover {
-                    color: white;
+                    color: #ffab40;
                 }
             }
 
@@ -377,6 +377,6 @@ body{
     border-radius: 50%;
 }
 
-#description, .title, #this-is-the-h1-text, #this-is-the-h2-text, #this-is-the-h3-text, #this-is-the-h4-text, #this-is-the-h5-text, #this-is-the-h6-text, strong{
-    color:white;
+body, p, .is-6 .is-uppercase .has-text-weight-normal.has-text-black-ter, #subtitle, .subtitle, b, #description, .title, #this-is-the-h1-text, #this-is-the-h2-text, #this-is-the-h3-text, #this-is-the-h4-text, #this-is-the-h5-text, #this-is-the-h6-text, strong{
+    color:white !important;
   }
