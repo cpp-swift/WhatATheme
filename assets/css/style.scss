@@ -69,7 +69,7 @@ a.navbar-item:hover,
     }
 
     a {
-        min-width: 25vmax;
+        /*min-width: 25vmax;*/
         margin: 0.5rem;
     }
 }
@@ -369,4 +369,13 @@ body{
 
 #description, .title, h1, h2, h3, h4, h5, h6, strong{
     color:white !important; 
-  }
+}
+
+.steps {
+    background-color: #3273dc;
+    border-color: #3273dc;
+}
+
+.steps a {
+    color: #fff;
+}
