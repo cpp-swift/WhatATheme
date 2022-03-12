@@ -3,32 +3,56 @@
         <div class="container">
             <div class="row">
                 <div class="col item social">
-                    <a href="https://www.facebook.com/CalPolySWIFT">
-                        <i class="fa fa-facebook"></i>
-                    </a>
-                    <a href="https://twitter.com/calpolyswift">
-                        <i class="fa fa-twitter"></i>
-                    </a>
-                    <a href="https://www.youtube.com/user/CalPolySWIFT?feature=guide">
-                        <i class="fa fa-youtube"></i>
-                    </a>
-                    <a href="https://github.com/CalPolySWIFT">
-                        <i class="fa fa-github"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/groups/Students-Interest-in-Future-Technology-4108262">
-                        <i class="fa fa-linkedin"></i>
-                    </a>
-                    <a href="https://discord.gg/Na5PGfp">
+                    {% unless site.facebook_username == %}
+                    <a href="http://www.facebook.com/{{site.facebook_username}}" target="_blank"><i
+                            class="fa fa-facebook"></i></a>
+                    {% endunless %}
+                    {% unless site.twitter_username == %}
+                    <a href="http://www.twitter.com/{{site.twitter_username}}" target="_blank"><i
+                            class="fab fa-twitter"></i></a>
+                    {% endunless %}
+                    {% unless site.youtube_channel_id == %}
+                    <a href="http://www.youtube.com/user/{{site.youtube_channel_id}}" target="_blank"><i
+                            class="fab fa-youtube"></i></a>
+                    {% endunless %}
+                    {% unless site.instagram_username == %}
+                    <a href="http://www.instagram.com/{{site.instagram_username}}" target="_blank"><i
+                            class="fab fa-instagram"></i></a>
+                    {% endunless %}
+                    {% unless site.linkedin_username == %}
+                    <a href="http://www.linkedin.com/company/{{site.linkedin_username}}" target="_blank"><i
+                            class="fab fa-linkedin"></i></a>
+                    {% endunless %}
+                    {% unless site.github_username == %}
+                    <a href="http://www.github.com/{{site.github_username}}" target="_blank"><i
+                            class="fab fa-github"></i></a>
+                    {% endunless %}
+                    {% unless site.reddit_username == %}
+                    <a href="http://www.reddit.com/u/{{site.reddit_username}}" target="_blank"><i
+                            class="fab fa-reddit"></i></a>
+                    {% endunless %}
+                    {% unless site.behance_username == %}
+                    <a href="http://www.behance.com/{{site.behance_username}}" target="_blank"><i
+                            class="fab fa-behance"></i></a>
+                    {% endunless %}
+                    {% unless site.dribbble_username == %}
+                    <a href="http://www.dribbble.com/{{site.dribbble_username}}" target="_blank"><i
+                            class="fab fa-dribbble"></i></a>
+                    {% endunless %}
+                    {% unless site.spotify_username == %}
+                    <a href="http://open.spotify.com/user/{{site.spotify_username}}" target="_blank"><i
+                            class="fab fa-spotify"></i></a>
+                    {% endunless %}
+                    {% unless site.discord_server == %}
+                    <a href="https://discord.gg/{{site.discord_server}}" target="_blank">
                         <i class="fa-brands fa-discord"></i>
                     </a>
-                    <a href="https://www.instagram.com/calpolyswift/">
-                        <i class="fa fa-instagram"></i>
-                    </a>
+                    {% endunless %}
                 </div>
             </div>
 
-            <p class="copyright"><i class="far fa-copyright"></i> {{ "now" | date: "%Y" }} | calpolyswift.org | Powered by <a
-                href="https://jekyllrb.com/" target="_blank">Jekyll</a></p>
+            <p class="copyright"><i class="far fa-copyright"></i> {{ "now" | date: "%Y" }} | calpolyswift.org | Powered
+                by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a></p>
 
         </div>
     </footer>
