@@ -1,73 +1,37 @@
 ---
 layout: compress
+title: about
 ---
 
 <!DOCTYPE html>
 <html>
 {% include head.html %}
+
 <body>
   {% include navbar.html %}
-  <section class="hero is-fullheight has-text-centered has-background-black-ter" id="about" style="background-color: #1f1f1f;">
+  <section class="hero is-fullheight has-text-justified has-background-black-ter" id="about"
+    style="background-color: #1f1f1f;">
     <div class="hero-body">
-        <div class="container">
-            <div class="columns" style="color:white; ">
-                <div class="" style="margin-top: 8rem;">
-                    <i class="fa fa-hands" style="width:16rem;height:16rem;padding-bottom:4rem"></i>
-                    <h1><b>Swift's Mission</b></h1>
-                    <p>We are Students with an Interest in the Future of Technology, or SWIFT, the premier information technology and security organization at Cal Poly Pomona. We focus on delivering the practical techniques, resources, and workshops to succeed within the fields of cybersecurity, system administration, and networking - for students, by students. We strive to inspire students to take their learning beyond the classroom and prepare members to endeavor into their professional careers with mentoring from industry professionals working in CrowdStrike, Mandiant, Tesla, and many other companies.</p>
-                    <img src="assets/images/swiftmission.jpg" style="margin-top: 8rem;">
-                    
-                </div>
-                <!-- <div class="column is-one-fifth-desktop is-one-fifth-tablet is-one-fifth-fullhd">
-                    <figure class="image">
-                        <img class="is-rounded" src="{{site.author-image}}" alt="{{site.author-name}}">
-                    </figure>
-                </div>
-                <div class="column has-text-left-desktop has-text-left-tablet has-text-left-fullhd has-text-left-widescreen">
-                    <p>{{site.author-about}}</p>
-                    <br>
-                    <div class="container columns is-centered">
-                        <div>
-                            <a href="{{site.url}}{{site.baseurl}}/#contact"
-                                class="button is-rounded is-uppercase has-text-weight-normal is-black is-outlined">Contact
-                                Me</a>
-                            </a>
-                        </div>
-                        <div>
-                            <a href="{{site.url}}{{site.baseurl}}/blog"
-                                class="button is-rounded is-uppercase has-text-weight-normal is-black is-outlined">Blog</a>
-                            </a>
-                        </div>
-                    </div>
-                </div> -->
-            </div>
+      <div class="container">
+        <div class="columns" style="color:white; ">
+          <div class="column is-one-quarter-desktop is-one-quarter-tablet is-one-quarter-fullhd" style="margin-top: 8rem;">
+            <i class="fa fa-hands" style="width:16rem;height:16rem;padding-bottom:4rem"></i>
+          </div>
+          <div class="column is-three-quarter-deskop is-three-quarter-tablet is-three-quarter-fullhd" style="margin-top: 8rem;">
+            <h1><b>Swift's Mission</b></h1>
+            <p>We are Students with an Interest in the Future of Technology, or SWIFT, the premier information
+              technology and security organization at Cal Poly Pomona. We focus on delivering the practical techniques,
+              resources, and workshops to succeed within the fields of cybersecurity, system administration, and
+              networking - for students, by students. We strive to inspire students to take their learning beyond the
+              classroom and prepare members to endeavor into their professional careers with mentoring from industry
+              professionals working in CrowdStrike, Mandiant, Tesla, and many other companies.</p>
+          </div>
         </div>
-</section>
-  <!-- {% include contact.html %} -->
+        <img src="assets/images/swiftmission.jpg" style="margin-top: 8rem;">
+      </div>
+  </section>
   <!--Footer begins here-->
   {% include footer.html %}
 </body>
-<!-- <script>
-  window.addEventListener("scroll", function (event) {
-    var scroll = this.scrollY;
-    var item = document.getElementsByClassName('navbar-item');
-    /* console.log(scroll); */
-    if (scroll < 565) {
-      item[1].classList.add('is-active');
-      item[2].classList.remove('is-active');
-      item[3].classList.remove('is-active');
-    }
-    if (scroll > 565 && scroll < 1130) {
-      item[1].classList.remove('is-active');
-      item[2].classList.add('is-active');
-      item[3].classList.remove('is-active');
-    }
-    if (scroll > 1130) {
-      item[1].classList.remove('is-active');
-      item[2].classList.remove('is-active');
-      item[3].classList.add('is-active');
-    }
-  });
-</script> -->
 
 </html>

@@ -22,6 +22,16 @@ a.navbar-item:hover,
     color: #ffab40 !important;
 }
 
+a.navbar-item.is-active {
+    background-color: rgba($color: #fff, $alpha: 0.25) !important;
+    color: #ffab40 !important;
+
+    &:hover {
+        background-color: rgba($color: #fff, $alpha: 0.25) !important;
+        color: grey;
+    }
+}
+
 .navbar-link:not(.is-arrowless)::after {
     border-color: grey;
 }
@@ -58,6 +68,7 @@ a.navbar-item:hover,
     color: #FFFFFF !important;
 }
 
+
 #about {
     .image {
         max-width: 20vmax;
@@ -72,6 +83,26 @@ a.navbar-item:hover,
         /*min-width: 25vmax;*/
         margin: 0.5rem;
     }
+
+    h1 {
+        font-size: 3rem;
+    }
+    
+
+    p {
+        text-align: justify;
+    }
+    #contact-button {
+        margin: 0.5rem auto;
+        display: flex;
+        justify-content: center;
+        color: #000000;
+        background-color: #ffab40;
+    }
+    #contact-button:hover {
+        color: #ffffff;
+        background-color: #ffab40;
+    }
 }
 
 #contact {
@@ -84,7 +115,7 @@ a.navbar-item:hover,
     svg {
         transition: all 0.15s ease-in-out;
         margin: auto 0.75vmax;
-
+        
         &:hover {
             transform: scale(1.10);
             filter: opacity(0.75);
@@ -92,7 +123,42 @@ a.navbar-item:hover,
     }
 
     hr {
-        background-color: black;
+        background-color: #ffab40;;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+}
+
+#competitions {
+    .image {
+        max-width: 20vmax;
+        margin: auto;
+
+        img {
+            border: 0.25rem dotted black;
+        }
+    }
+
+    a {
+        /*min-width: 25vmax;*/
+        margin: 0.5rem;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+    p {
+        text-align: justify;
+    }
+
+    .tag {
+        margin-bottom: 0.5vmax;
+        &.is-ctf {
+            color: hsl(0, 0%, 96%);
+            background-color: hsl(29, 100%, 40%);
+        }
     }
 }
 
