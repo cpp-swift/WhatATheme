@@ -457,4 +457,28 @@ body{
     font-size: 2rem;
     padding: 20px;
 }
+/* Benefits */
+.sectionformat {
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-evenly;
+	align-items: center;
+	align-content: center;
+}
 
+.containeritem{
+    padding: 2rem;
+}
+
+h2 {
+    font-size: 2.2rem;
+}
+
+.infosectiondesciption{
+    padding: 2rem;
+}
+
+.button{
+    background-color: #ffab40; border-color: #ffab40;
+}
