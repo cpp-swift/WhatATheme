@@ -1,14 +1,15 @@
 ---
 layout: compress
 title: membership
-accordion: 
-  - title: Community
-    content: Be part of a large community of students spanning over 30 years. 
-  - title: Events
-    content: Access to workshops and events throughout the year. Free attendance to Tech Symposium. Go on tours to organizations focusing on System Administration and Cyber Security
-  - title: Giveaways
-    content: Free T-Shirts, Stickers, Webcam Covers, and Other Swag. 
-    
+accordion:
+- title: Community
+content: Be part of a large community of students spanning over 30 years.
+- title: Events
+content: Access to workshops and events throughout the year. Free attendance to Tech Symposium. Go on tours to
+organizations focusing on System Administration and Cyber Security
+- title: Giveaways
+content: Free T-Shirts, Stickers, Webcam Covers, and Other Swag.
+
 ---
 
 <!DOCTYPE html>
@@ -16,142 +17,133 @@ accordion:
 {% include head.html %}
 
 <body>
-  {% include navbar.html %}
-  <section class="hero is-fullheight has-text-centered has-background-black-ter" id="membership" style="background-color: #1f1f1f;">
-    <div class="hero-body">
-        <div class="container">
-            <div class="columns" style="color:white;">
-                <div>
-                    <h1 style="font-size:3rem; align-self:center; margin: 3rem;">Join the SWIFT Community</h1>
-                    <img src="assets/images/community.jpg" style="height: 60%; padding-bottom: 20px;">
-                    <!-- Membership steps -->
-                <div style="display: flex;flex-direction: row;flex-wrap: wrap;justify-content: space-evenly;align-items: center;align-content: center;">
-                    <div class="membership">
-                        <h3>Step 1</h3>
-                        <!-- <h4>Join Discord</h4> -->
-                        <p><i class="fa-brands fa-discord" style="font-size:2rem; padding: 20px;"></i></p>
-                        <button class="button button--primary button--gray-dark button-round button--md steps" style="">
-                            <a href="https://discord.gg/Na5PGfp/" style="min-width: none;">Discord</a>
-                        </button>   
+    {% include navbar.html %}
+    <section class="hero is-fullheight has-text-centered has-background-black-ter" id="membership"
+        style="background-color: #1f1f1f;">
+        <div class="hero-body">
+            <div class="container">
+                <div class="columns" style="color:white;">
+                    <div>
+                        <h1 style="font-size:3rem; align-self:center; margin: 3rem;">Join the SWIFT Community</h1>
+                        <img src="assets/images/community.jpg" style="height: 60%; padding-bottom: 20px;">
+                        <!-- Membership steps -->
+                        <div
+                            style="display: flex;flex-direction: row;flex-wrap: wrap;justify-content: space-evenly;align-items: center;align-content: center;">
+                            <div class="membership">
+                                <h3>Step 1</h3>
+                                <!-- <h4>Join Discord</h4> -->
+                                <p><i class="fa-brands fa-discord" style="font-size:2rem; padding: 20px;"></i></p>
+                                <button class="button button--primary button--gray-dark button-round button--md steps">
+                                    <a href="https://discord.gg/Na5PGfp/" style="min-width: none;">Discord</a>
+                                </button>
+                            </div>
+                            <div class="membership">
+                                <h3>Step 2</h3>
+                                <!-- <h4>Join myBAR</h4> -->
+                                <p><i class="fa-solid fa-handshake" style="font-size:2rem; padding: 20px;"></i></p>
+                                <button class="button button--primary button--gray-dark button-round button--md steps">
+                                    <a href="https://mybar.cpp.edu/organization/telecommunications">myBAR</a>
+                                </button>
+                            </div>
+                            <div class="membership">
+                                <h3>Step 3</h3>
+                                <!-- <h4>Complete Registration</h4> -->
+                                <p><i class="fa-solid fa-file-lines" style="font-size:2rem; padding: 20px;"></i></p>
+                                <button class="button button--primary button--gray-dark button-round button--md steps">
+                                    <a
+                                        href="https://www.eventbrite.com/e/swift-2021-2022-membership-tickets-169872480161">Register</a>
+                                </button>
+                            </div>
+                        </div>
                     </div>
-                    <div class="membership">
-                        <h3>Step 2</h3>
-                        <!-- <h4>Join myBAR</h4> -->
-                        <p><i class="fa-solid fa-handshake" style="font-size:2rem; padding: 20px;"></i></p>
-                        <button class="button button--primary button--gray-dark button-round button--md steps">
-                            <a href="https://mybar.cpp.edu/organization/telecommunications">myBAR</a>
-                        </button>
+
+                </div>
+
+                <div style="padding-bottom: 6rem;">
+                    SWIFT is a way of moving your college career to the next level. Joining is a three step process, but
+                    it should not take more then 10 minutes. Membership allows you to participate in events and
+                    competitions, vote in elections and much more! With the help of our club resources, you can make
+                    your mark on the cyber security field. Join us and meet other students that are talented and
+                    passionate about cybersecurity. Membership is per year and is available to all Cal Poly Students and
+                    active Cal State Students of any major. Membership lasts for the entire academic year.
+                </div>
+
+                <div style="text-align: left">
+                    <h2>Membership Benefits</h2>
+                    {% include accordian.html %}
+
+
+
+
+
+                </div>
+                <h2>Testomonials</h2>
+                <div
+                    style="display: flex;flex-direction: row;flex-wrap: wrap;justify-content: space-around;align-items: center;align-content: center; text-align: center;">
+
+                    <div class="box has-text-white" style="width: 30%; background: #1f1f1f;">
+                        <p>
+                            <span class="font-bold has-text-primary is-size-5">
+                                “
+                            </span>
+                            Joining SWIFT has completely changed my career trajectory. I went from being a CIS student
+                            to landing a cybersecurity internship, becoming Director of SWIFT Labs, and being an
+                            accomplished penetration tester all within a year and a half. The most important part of my
+                            time at SWIFT is seeing the hard work build up to something greater. Being a penetration
+                            tester has been something I’ve been working towards since February, and this past November,
+                            I represented Cal Poly Pomona at the Collegiate Penetration Testing Competition and won 1st
+                            place in the Western Region.
+                            <span class="font-bold has-text-primary is-size-5">
+                                ”
+                            </span>
+                        </p>
+                        <div class="is-flex is-align-items-center is-justify-content-start mt-4"
+                            style="padding-top: 2rem">
+                            <a href="#" class="image is-48x48">
+                                <img alt="profil" src="/assets/images/eboard/Robinson.jpg" class="is-rounded" />
+                            </a>
+                            <div class="is-flex is-flex-direction-column ml-2 is-align-content-space-between">
+                                <span class="font-semibold has-text-weight-bold">
+                                    Robinson Tran
+                                </span>
+                                <span class="is-size-7 is-flex is-align-items-center">
+                                    CIS Information Security, Class of 2021
+                                </span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="membership">
-                        <h3>Step 3</h3>
-                        <!-- <h4>Complete Registration</h4> -->
-                        <p><i class="fa-solid fa-file-lines" style="font-size:2rem; padding: 20px;"></i></p>
-                        <button class="button button--primary button--gray-dark button-round button--md steps">
-                            <a href="https://www.eventbrite.com/e/swift-2021-2022-membership-tickets-169872480161">Register</a>
-                        </button>
+
+                    <div class="box has-text-white" style="width: 30%; background: #1f1f1f;">
+                        <p>
+                            <span class="font-bold has-text-primary is-size-5">
+                                “
+                            </span>
+                            Without my involvement in Students With an Interest in the Future of Technology I can
+                            guarantee with absolute certainty, I would never have been able to answer interview
+                            questions. My time as an E-board member of the student run organization has accelerated my
+                            cybersecurity knowledge through a variety of ways such as leading weekly presentations,
+                            generating cybersecurity based workshops, and generally fostering a community of individuals
+                            with a passion for the industry
+                            <span class="font-bold has-text-primary is-size-5">
+                                ”
+                            </span>
+                        </p>
+                        <div class="is-flex is-align-items-center is-justify-content-start mt-4"
+                            style="padding-top: 2rem">
+                            <a href="#" class="image is-48x48">
+                                <img alt="profil" src="/assets/images/eboard/Luis.jpg" class="is-rounded" />
+                            </a>
+                            <div class="is-flex is-flex-direction-column ml-2 is-align-content-space-between">
+                                <span class="font-semibold has-text-weight-bold">
+                                    Luis Velasquez
+                                </span>
+                                <span class="is-size-7 is-flex is-align-items-center">
+                                    CIS Information Security, Class of 2022
+                                </span>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            
-        </div>
-        
-        <div style="padding-bottom: 6rem;">
-          SWIFT is a way of moving your college career to the next level. Joining is a three step process, but it should not take more then 10 minutes. Membership allows you to participate in events and competitions, vote in elections and much more! With the help of our club resources, you can make your mark on the cyber security field. Join us and meet other students that are talented and passionate about cybersecurity. Membership is per year and is available to all Cal Poly Students and active Cal State Students of any major. Membership lasts for the entire academic year.
-        </div>
-
-        <div style="text-align: left">
-            <h2>Membership Benefits</h2>
-            {% include accordian.html %}
-
-            
-
-            
-            
-        </div>
-        <h2>Testomonials</h2>
-        <div style="display: flex;flex-direction: row;flex-wrap: wrap;justify-content: space-around;align-items: center;align-content: center; text-align: center;">
-          
-<div class="box has-text-white" style="width: 30%; background: #1f1f1f;">
-  <p>
-      <span class="font-bold has-text-primary is-size-5">
-          “
-      </span>
-      Joining SWIFT has completely changed my career trajectory. I went from being a CIS student to landing a cybersecurity internship, becoming Director of SWIFT Labs, and being an accomplished penetration tester all within a year and a half. The most important part of my time at SWIFT is seeing the hard work build up to something greater. Being a penetration tester has been something I’ve been working towards since February, and this past November, I represented Cal Poly Pomona at the Collegiate Penetration Testing Competition and won 1st place in the Western Region.
-      <span class="font-bold has-text-primary is-size-5">
-          ”
-      </span>
-  </p>
-  <div class="is-flex is-align-items-center is-justify-content-start mt-4" style="padding-top: 2rem">
-      <a href="#" class="image is-48x48">
-          <img alt="profil" src="/assets/images/eboard/Robinson.jpg" class="is-rounded"/>
-      </a>
-      <div class="is-flex is-flex-direction-column ml-2 is-align-content-space-between">
-          <span class="font-semibold has-text-weight-bold">
-              Robinson Tran
-          </span>
-          <span class="is-size-7 is-flex is-align-items-center">
-              CIS Information Security, Class of 2021 
-          </span>
-      </div>
-  </div>
-</div>
-
-<div class="box has-text-white" style="width: 30%; background: #1f1f1f;">
-  <p>
-      <span class="font-bold has-text-primary is-size-5">
-          “
-      </span>
-      Without my involvement in Students With an Interest in the Future of Technology I can guarantee with absolute certainty, I would never have been able to answer interview questions. My time as an E-board member of the student run organization has accelerated my cybersecurity knowledge through a variety of ways such as leading weekly presentations, generating cybersecurity based workshops, and generally fostering a community of individuals with a passion for the industry
-            <span class="font-bold has-text-primary is-size-5">
-          ”
-      </span>
-  </p>
-  <div class="is-flex is-align-items-center is-justify-content-start mt-4" style="padding-top: 2rem">
-      <a href="#" class="image is-48x48">
-          <img alt="profil" src="/assets/images/eboard/Luis.jpg" class="is-rounded"/>
-      </a>
-      <div class="is-flex is-flex-direction-column ml-2 is-align-content-space-between" >
-          <span class="font-semibold has-text-weight-bold">
-              Luis Velasquez
-          </span>
-          <span class="is-size-7 is-flex is-align-items-center">
-              CIS Information Security, Class of 2022 
-          </span>
-      </div>
-  </div>
-</div>
-        </div>
-        
-        
-</section>
-<section class="hero is-fullheight has-text-centered has-background-black-ter" id="membership" style="background-color: #1f1f1f;">
-    
-</section>
-  <!-- {% include contact.html %} -->
-  <!--Footer begins here-->
-  {% include footer.html %}
+    </section>
 </body>
-<!-- <script>
-  window.addEventListener("scroll", function (event) {
-    var scroll = this.scrollY;
-    var item = document.getElementsByClassName('navbar-item');
-    /* console.log(scroll); */
-    if (scroll < 565) {
-      item[1].classList.add('is-active');
-      item[2].classList.remove('is-active');
-      item[3].classList.remove('is-active');
-    }
-    if (scroll > 565 && scroll < 1130) {
-      item[1].classList.remove('is-active');
-      item[2].classList.add('is-active');
-      item[3].classList.remove('is-active');
-    }
-    if (scroll > 1130) {
-      item[1].classList.remove('is-active');
-      item[2].classList.remove('is-active');
-      item[3].classList.add('is-active');
-    }
-  });
-</script> -->
-
 </html>
