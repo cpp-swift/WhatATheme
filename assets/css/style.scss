@@ -103,6 +103,17 @@ a.navbar-item.is-active {
         color: #ffffff;
         background-color: #ffab40;
     }
+    .aboutitem{
+        padding: 2rem;
+    }
+
+    .infosectiondesciption{
+        padding: 2rem;
+    }
+
+    .aboutsection{
+        display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: space-around;align-items: center;align-content: stretch;
+    }
 }
 
 #contact {
@@ -163,7 +174,59 @@ a.navbar-item.is-active {
 }
 
 #membership {
-    
+    /* membership steps */
+
+    .steps {
+        background-color: #3273dc;
+        border-color: #3273dc;
+    }
+
+    .steps a {
+        color: #fff;
+    }
+
+    /* Benefits */
+    .benefits h3 {
+        font-size: 1.5rem;
+    }
+
+    .benefits i {
+        font-size: 2rem;
+        padding: 20px;
+    }
+    /* Benefits */
+    .sectionformat {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        align-items: center;
+        align-content: center;
+    }
+
+    .button{
+        background-color: #ffab40; border-color: #ffab40;
+    }
+
+    .membership{
+        width: 5rem;
+    }
+
+    .box{
+        width: 30%; background: #1f1f1f;
+    }
+
+    .testomonial-text{
+        padding: 1.2rem;
+    }
+
+    p {
+        text-align: justify;
+    }
+
+    h2 {
+        font-size: 2.2rem;
+    }
 }
 
 #blog {
@@ -441,63 +504,15 @@ body{
     color:white !important; 
 }
 
-/* membership steps */
-
-.steps {
-    background-color: #3273dc;
-    border-color: #3273dc;
-}
-
-.steps a {
-    color: #fff;
-}
-
-/* Benefits */
-.benefits h3 {
-    font-size: 1.5rem;
-}
-
-.benefits i {
-    font-size: 2rem;
-    padding: 20px;
-}
-/* Benefits */
-.sectionformat {
-    display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: space-evenly;
-	align-items: center;
-	align-content: center;
-}
-
-.aboutitem{
-    padding: 2rem;
-}
-
-h2 {
-    font-size: 2.2rem;
-}
-
-.infosectiondesciption{
-    padding: 2rem;
-}
-
-.button{
-    background-color: #ffab40; border-color: #ffab40;
-}
-
-.aboutsection{
-    display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: space-around;align-items: center;align-content: stretch;
-}
-
-.membership{
-    widt: 5rem;
-}
-
 @media (max-width: 990px) { 
     .aboutsection{
         flex-direction: column;
+    }
+ }
+
+ @media (max-width: 1220px) { 
+    .box{
+        width: 100%;
     }
  }
 
