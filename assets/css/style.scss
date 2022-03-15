@@ -488,12 +488,26 @@ h2 {
 }
 
 .membership{
-    widt: 5rem;
+    width: 5rem;
+}
+
+.box{
+    width: 30%; background: #1f1f1f;
+}
+
+.testomonial-text{
+    padding: 1.2rem;
 }
 
 @media (max-width: 990px) { 
     .aboutsection{
         flex-direction: column;
+    }
+ }
+
+ @media (max-width: 1220px) { 
+    .box{
+        width: 100%;
     }
  }
 
