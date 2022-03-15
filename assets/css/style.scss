@@ -467,7 +467,7 @@ body{
 	align-content: center;
 }
 
-.containeritem{
+.aboutitem{
     padding: 2rem;
 }
 
@@ -482,3 +482,21 @@ h2 {
 .button{
     background-color: #ffab40; border-color: #ffab40;
 }
+
+.aboutsection{
+    display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: space-around;align-items: center;align-content: stretch;
+}
+
+.membership{
+    widt: 5rem;
+}
+
+@media (max-width: 990px) { 
+    .aboutsection{
+        flex-direction: column;
+    }
+ }
+
+ .card {
+     width: 20rem;
+ }
