@@ -1,7 +1,7 @@
 ---
 title: Welcome to SWIFT!
 layout: post
-post-image: "/WhatATheme/assets/images/swift_post.png"
+post-image: "/assets/images/swift_post.png"
 description: Read this blog to see all the hard work it takes to do what we do here at SWIFT!
 tags:
 - post
