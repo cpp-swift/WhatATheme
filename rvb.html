@@ -7,29 +7,88 @@ layout: compress
 
 <body>
     {% include navbar.html %}
-    <section class="hero is-fullheight has-text-centered has-background-black-ter" id="about"
+    <section class="hero is-fullheight-with-navbar has-text-centered has-background-black-ter" id="rvb">
+        <div class="hero-body" style="background-color:#1f1f1f">
+            <div class="container">
+                <div class="columns is-centered" style="color:white;">
+                    <div class="column is-narrow">
+                        <i class="fa fa-trophy" style="width:16rem;height:16rem;padding-bottom:4rem"></i>
+                        <h1 style="margin-bottom:2rem"><b>Red vs. Blue</b></h1>
+                        <p>
+                            SWIFT's Flagship Competition
+                        </p>
+                        <h1>April 16th, 2022</h1>
+                        <p>1:00 PM @ Cal Poly Pomona</p>
+                        <a id="contact-button" href="https://forms.gle/SBptmPMvdf14vEFGA"
+                            class="button is-rounded is-uppercase has-text-weight-normal is-black is-outlined has-text-weight-semibold column"
+                            target="_blank">Sign up today!
+                        </a>
+                    </div>
+                </div>
+            </div>
+    </section>
+    
+    <section class="hero is-halfheight has-text-left has-background-black-ter" id="rvb"
         style="background-color: #1f1f1f;">
         <div class="hero-body">
             <div class="container">
-                <h1><b>RvB</b></h1>
-                <div class="columns" style="color:white; margin-top: 8rem;">
-
+                <div class="columns" style="color:white; ">
                     <div class="column is-one-third-desktop is-one-third-tablet is-one-third-fullhd">
                         <img src="assets/images/rvb.jpg">
                     </div>
                     <div class="column is-two-third-desktop is-two-third-tablet is-two-third-fullhd">
+                        <h1>About RvB</h1>
                         <p>Red vs. Blue (RvB) is a SWIFT-run competition that enables its teams competing in CCDC
                             and
                             CPTC to share their technical knowledge and expertise with other students. RvB is
                             modeled
                             after CCDC and places a team of 4 students into a vulnerable network they have to
                             protect.
-                            SWIFT board and alumni act as an adversary trying to compromise the network and give
+                            SWIFT board, alumni, and volunteers act as an adversary trying to compromise the network and
+                            give
                             students a unique experience of troubleshooting and incident response in an active
                             breach
                             scenario. Originating from a partnership between SWIFT and Troy High School, we aim to
                             expand this opportunity for SWIFT members and give the competition experience into
                             everyone's hands.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="hero is-halfheight has-text-left has-background-black-ter" id="rvb"
+        style="background-color: #242526;">
+        <div class="hero-body">
+            <div class="container">
+                <div class="columns" style="color:white; ">
+                    <div class="column is-one-third-desktop is-one-third-tablet is-one-third-fullhd">
+                        <img src="assets/images/rvbuptime.png">
+                    </div>
+                    <div class="column is-two-third-desktop is-two-third-tablet is-two-third-fullhd">
+                        <h1>How RvB Works</h1>
+                        <p>
+                            RvB uses three main metrics to give points to participants: Secure Configuration Score
+                            (SCS), Service Uptime, and Injects.
+                        </p>
+                        <h3>Secure Configuration Score (SCS)</h3>
+                        <p>
+                            Our scoring engine checks for specific security configurations that you should implement.
+                        </p>
+                        <h3>Service Uptime</h3>
+                        <p>
+                            RvB mocks a real business. Keeping your business up and actually functional is important.
+                            You
+                            get a small amount of points every few minutes if you keep your service functional. However,
+                            if you are unable keep your service operational for too long, you will receive a point
+                            penalty.
+                        </p>
+                        <h3>Injects</h3>
+                        <p>Throughout the competition, as if defending your network from an active red wasn't enough,
+                            your team will receive additional business tasks, injects, from the business that hired you.
+                            Submitting injects will reward you with extra points, but make sure to do it before
+                            the deadline or no points for you.
+                        </p>
                     </div>
                 </div>
             </div>
