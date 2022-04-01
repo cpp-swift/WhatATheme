@@ -1,6 +1,110 @@
 ---
 ---
 @import "main.scss";
+html {
+    // Change root font size when screen is small (since everything is in rem units)
+    // min screen size is 320px, so if it looks good, no need for smaller
+    @media screen and (max-width: 950px) {
+        font-size: 12px;
+    }
+}
+#pillars {
+    * {box-sizing:border-box}
+    .pillar-icon {
+        width:16rem;
+        height:16rem;
+        @media screen and (max-width: 550px) {
+            width: 50vw;
+        }
+    }
+    /* Slideshow container */
+    .slideshow-container {
+        background-color: #242526;
+        max-width: 70%;
+        // position: relative;
+        margin: auto;
+        // display:flex;
+        border-radius: 2rem;
+        padding: 2rem;
+        @media screen and (max-width: 500px) {
+            max-width: fit-content;
+        }
+    }
+
+    /* Hide the images by default */
+    .mySlides {
+        display: none;
+    }
+    .button-container {
+        display: flex;
+        justify-content: space-between;
+    }
+    /* Next & previous buttons */
+    .prev, .next {
+        // cursor: pointer;
+        // position: relative;
+        // top: -10rem;
+        width: auto;
+        // margin-top: -10rem;
+        padding: 2rem;
+        color: white;
+        font-weight: bold;
+        font-size: 1.5rem;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+        @media screen and (max-width: 900px) {
+            display: none;
+        }
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover, .next:hover {
+        background-color: rgba(0,0,0,0.8);
+    }
+
+
+    /* The dots/bullets/indicators */
+    .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+    }
+
+    .active, .dot:hover {
+        background-color: #ffab40;
+    }
+
+    /* Fading animation */
+    .fade {
+        animation-name: fade;
+        animation-duration: 1.5s;
+    }
+
+    @keyframes fade {
+        from {opacity: .4}
+        to {opacity: 1}
+    }
+    h1 {
+            font-size: 3rem;
+            margin-bottom: 2rem;
+            line-height: 4.0rem;
+            @media screen and (max-width: 600px) {
+                font-size: 10vw;
+            }
+    }
+}
 
 #navbar {
     opacity: 0.95;
@@ -68,17 +172,24 @@ a.navbar-item.is-active {
     color: #FFFFFF !important;
 }
 
-#contact-button {
+.swift-button {
     margin: 0.5rem auto;
     display: flex;
     justify-content: center;
     color: black;
-    background-color: #ffab40;
+    border-color: transparent !important;
+    background-color: #ffab40 !important;
+    transition: all .25s;
+
+    &:hover {
+        color: #ffffff;
+        letter-spacing: 15px;
+    }
+    &:focus {
+        color: #ffffff;
+    }
 }
-#contact-button:hover {
-    color: #ffffff;
-    background-color: rgb(172, 122, 58);
-}
+
 
 #about {
     .image {
@@ -97,19 +208,25 @@ a.navbar-item.is-active {
 
     h1 {
         font-size: 3rem;
+        margin-bottom: 2rem;
+        line-height: 4.0rem;
     }
     
 
-    p {
-        text-align: justify;
-    }
+    // p {
+    //     text-align: justify;
+    // }
 
     .aboutitem{
         padding: 2rem;
     }
 
-    .infosectiondesciption{
-        padding: 2rem;
+    .rightpadding{
+        padding-right: 2rem;
+    }
+
+    .leftpadding{
+        padding-left: 2rem;
     }
 
     .aboutsection{
@@ -209,8 +326,17 @@ a.navbar-item.is-active {
         background-color: #ffab40; border-color: #ffab40;
     }
 
-    .membership{
-        width: 5rem;
+    .membership {
+        // width: 8rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .member-icon {
+        font-size: 2rem; 
+        padding: 20px;
     }
 
     .box{
@@ -225,6 +351,9 @@ a.navbar-item.is-active {
         text-align: justify;
     }
 
+}
+h1 {
+    font-size: 3rem;
 }
 h2 {
     font-size: 2.2rem;
@@ -256,10 +385,6 @@ code {
     a {
         /*min-width: 25vmax;*/
         margin: 0.5rem;
-    }
-
-    h1 {
-        font-size: 3rem;
     }
 
     demo {
@@ -402,7 +527,6 @@ code {
     }
 }
 
-
 #footer {
     #backtotop {
         transition: all 0.25s ease;
@@ -528,7 +652,7 @@ code {
         ol, ul, blockquote {
             display: inline-block;
             background-color: rgb(73, 73, 73);
-            border-left: 5px solid #00d1b2;
+            border-left: 5px solid var(--accent);
         }
         hr{
             background-color: grey;
@@ -580,15 +704,17 @@ body{
 
 .eboard{
     margin: 3rem;
+    padding: 1.75rem;
+}
+
+.eboard-image{
+    border-width: 50%;
+    border-radius: 50%;
 }
 
 .eboard h3{
     font-size:1.25rem;
     padding-top: 1.5rem;
-}
-
-.eboard-image{
-    border-radius: 50%;
 }
 
 #description, .title, h1, h2, h3, h4, h5, h6, strong{
