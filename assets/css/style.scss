@@ -376,7 +376,10 @@ code {
     .testimonial-box {
         display: flex;
         justify-content: center;
-        // align-items: center;
+        @media screen and (max-width: 769px) {
+            flex-direction: column;
+        }
+        align-items: center;
     }
     .testimonial {
         // font-size: 12px;
@@ -384,6 +387,9 @@ code {
         border-radius: 8px;
         height: 100%;
         max-width: 30%;
+        @media screen and (max-width: 769px) {
+            max-width: 90%;
+        }
         position: relative;
         overflow: hidden;
         transition: 0.25s;
