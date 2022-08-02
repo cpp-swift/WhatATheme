@@ -1,6 +1,7 @@
 ---
 ---
 @import "main.scss";
+
 html {
     // Change root font size when screen is small (since everything is in rem units)
     // min screen size is 320px, so if it looks good, no need for smaller
@@ -761,7 +762,20 @@ code {
         margin-top: 5vmax;
     }
 
-    
+    pre {
+        background-color: #1b1d39;
+        color:hsl(0, 0%, 96%);
+    }
+
+    .centered {
+        display: block;
+        margin: auto;
+        text-align: center;
+    }
+
+    .caption {
+        margin-bottom: 1rem;
+    }
 }
 
 #page-section {
