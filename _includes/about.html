@@ -1,0 +1,17 @@
+<style>
+    a.navbar-item:hover,
+.navbar-link:hover {
+    background-color: black !important;
+    color: #ffab40 !important;
+}
+</style>
+
+<div class="navbar-item has-dropdown is-hoverable">
+    <a style="color:white" class="navbar-item {% if page.title == 'about' %}is-active{% endif %}" href="{{site.url}}{{site.baseurl}}/about">
+        ABOUT
+    </a>
+
+    <div class="navbar-dropdown has-background-black is-left">        
+        <a class="navbar-item" href="{{site.url}}{{site.baseurl}}/faq" style="color:white">FAQ</a>
+    </div>
+</div>
