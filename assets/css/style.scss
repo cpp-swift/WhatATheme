@@ -832,3 +832,9 @@ body{
  .card {
      width: 20rem;
  }
+
+ #workshop {
+    .lab__manual {
+        width: calc(min(90vw, 800px));
+    }
+ }
