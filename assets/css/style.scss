@@ -1,6 +1,7 @@
 ---
 ---
 @import "main.scss";
+
 html {
     // Change root font size when screen is small (since everything is in rem units)
     // min screen size is 320px, so if it looks good, no need for smaller
@@ -183,7 +184,6 @@ a.navbar-item.is-active {
 
     &:hover {
         color: #ffffff;
-        letter-spacing: 15px;
     }
     &:focus {
         color: #ffffff;
@@ -761,7 +761,20 @@ code {
         margin-top: 5vmax;
     }
 
-    
+    pre {
+        background-color: #1b1d39;
+        color:hsl(0, 0%, 96%);
+    }
+
+    .centered {
+        display: block;
+        margin: auto;
+        text-align: center;
+    }
+
+    .caption {
+        margin-bottom: 1rem;
+    }
 }
 
 #page-section {
@@ -791,6 +804,7 @@ body{
     border-radius: 50%;
 	width: 200px;
 	height: 200px;
+    object-fit: cover;
 }
 
 .eboard h3{
@@ -816,4 +830,10 @@ body{
 
  .card {
      width: 20rem;
+ }
+
+ #workshop {
+    .lab__manual {
+        width: calc(min(90vw, 800px));
+    }
  }

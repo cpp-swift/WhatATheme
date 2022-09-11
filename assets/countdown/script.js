@@ -4,11 +4,13 @@ let launchDate = new Date("Apr 16, 2022 13:00:00").getTime();
 
 let now = new Date().getTime();
 let t = launchDate - now;
+// let liveText = "RvB is LIVE!";
+let liveText = "Thanks for playing!";
 
 if (t > 0) {
     let timer = setInterval(tick, 1000);
 } else {
-    document.querySelector('.countdown').innerText = "RvB is LIVE!";
+    document.querySelector('.countdown').innerText = liveText;
     document.getElementById('countdown').classList.add("pulsate")
 }
 
@@ -36,7 +38,7 @@ function tick() {
         document.querySelector('.countdown').innerText = time;
     }
     else {
-        document.querySelector('.countdown').innerText = "RvB is LIVE!";
+        document.querySelector('.countdown').innerText = liveText;
         document.getElementById('countdown').classList.add("pulsate")
     }
 }

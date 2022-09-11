@@ -1,0 +1,36 @@
+---
+layout: compress
+title: This Week's Workshop
+---
+<!DOCTYPE html>
+<html>
+{% include head.html %}
+
+<body>
+    {% include navbar.html %}
+    <section class="hero is-fullheight-with-navbar has-text-justified has-background-black-ter" id="workshop"
+        style="background-color: #1f1f1f;">
+        <div class="hero-body">
+            <div style="width: 100%; display: flex; flex-direction: column; justify-items: center;">
+                <div class="container">
+                    <center><h1>This Week's Workshop</h1></center>
+                    <div class="lab__manual">
+                        <div>
+                            <iframe width="100%" height="600px"
+                                src="https://docs.google.com/document/d/e/2PACX-1vTKxzRabG8J6xPpHw0ITYD72Ga9EeT6yPLzL6ZkOcFy1SFLDNcK1ZsE50glvSmMa4tYMiM_LVaBx-Yl/pub?embedded=true">
+                            </iframe>
+                        </div>
+                        <div>
+                            <a href="https://docs.google.com/document/d/1xzfzqCR5yI4DFejmC_VEAw5YdVo6DNDxVoHctFgZnTY/edit?usp=sharing"
+                                class="button swift-button is-rounded is-uppercase has-text-weight-normal is-black is-outlined has-text-weight-semibold"
+                                target="_blank">Open Full Document
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Footer begins here-->
+    {% include footer.html %}
+</body>

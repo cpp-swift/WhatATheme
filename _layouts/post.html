@@ -32,27 +32,45 @@ layout: compress
               | strip_html | strip_newlines }}</p>
             {% endunless %}
             <p class="subtitle is-6 is-uppercase has-text-weight-normal has-text-black-ter">Published on
-              <b>{{ page.date | date: "%-B %d, %Y" }}</b> by <a href="
-              {% if site.author-url %}{{site.author-url}}{% else %}{{site.url}}{{site.baseurl}}/#about{% endif %}"
-                target="_blank"><b class="has-text-link"><u>
+              <b>{{ page.date | date: "%-B %d, %Y" }}</b> by <u>
                     {% assign authorCount = page.authors | size %}
                     {% if authorCount == 0 %}
                     No author
                     {% elsif authorCount == 1 %}
-                    {{ page.authors | first }}
+                      {% assign author = page.authors | first %}
+                      {% if author.link %}
+                        <a href="{{author.link}}"
+                        target="_blank"><b class="has-text-link">{{ author.name }}</b></a>
+                      {% else %}
+                        {{ author.name }}
+                      {% endif %}
                     {% else %}
-                    {% for author in page.authors %}
-                    {% if forloop.first %}
-                    {{ author }}
-                    {% elsif forloop.last %}
-                    and {{ author }}
-                    {% else %}
-                    , {{ author }}
+                      {% for author in page.authors %}
+                        {% if forloop.first %}
+                          {% if author.link %}
+                        <a href="{{author.link}}"
+                        target="_blank"><b class="has-text-link">{{ author.name }}</b></a>
+                      {% else %}
+                        {{ author.name }}
+                      {% endif %}
+                        {% elsif forloop.last %}
+                          and {% if author.link %}
+                        <a href="{{author.link}}"
+                        target="_blank"><b class="has-text-link">{{ author.name }}</b></a>
+                      {% else %}
+                        {{ author.name }}
+                      {% endif %}
+                        {% else %}
+                          , {% if author.link %}
+                        <a href="{{author.link}}"
+                        target="_blank"><b class="has-text-link">{{ author.name }}</b></a>
+                      {% else %}
+                        {{ author.name }}
+                      {% endif %}
+                        {% endif %}
+                      {% endfor %}
                     {% endif %}
-                    {% endfor %}
-                    {% endif %}
-                  </u></b>
-              </a>
+                  </u>
             </p>
             {%- assign tags = page.tags -%}
             {%- unless tags.size == 0 -%}
