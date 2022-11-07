@@ -1,5 +1,5 @@
 // time is 24 hours format
-let launchDate = new Date("Apr 16, 2022 13:00:00").getTime();
+let launchDate = new Date("Nov 12, 2022 11:00:00").getTime();
 // set date ^
 
 let now = new Date().getTime();
